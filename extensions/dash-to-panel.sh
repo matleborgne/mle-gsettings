@@ -21,27 +21,4 @@ gsettings set org.gnome.shell.extensions.dash-to-panel show-activities-button fa
 gsettings set org.gnome.shell.extensions.dash-to-panel tray-size 20
 gsettings set org.gnome.shell.extensions.dash-to-panel status-icon-padding 4
 
-gsettings set org.gnome.shell.extensions.dash-to-panel panel-element-positions {\
-  "0":[\
-    {"element":"showAppsButton","visible":false,"position":"stackedTL"},\
-    {"element":"activitiesButton","visible":true,"position":"stackedTL"},\
-    {"element":"leftBox","visible":true,"position":"stackedTL"},\
-    {"element":"taskbar","visible":true,"position":"stackedTL"},\
-    {"element":"dateMenu","visible":true,"position":"centerMonitor"},\
-    {"element":"centerBox","visible":true,"position":"stackedBR"},\
-    {"element":"rightBox","visible":true,"position":"stackedBR"},\
-    {"element":"systemMenu","visible":true,"position":"stackedBR"},\
-    {"element":"desktopButton","visible":false,"position":"stackedBR"}
-  ],\
-  "1":[\
-    {"element":"showAppsButton","visible":false,"position":"stackedTL"},\
-    {"element":"activitiesButton","visible":true,"position":"stackedTL"},\
-    {"element":"leftBox","visible":true,"position":"stackedTL"},\
-    {"element":"taskbar","visible":true,"position":"stackedTL"},\
-    {"element":"dateMenu","visible":true,"position":"centerMonitor"},
-    {"element":"centerBox","visible":true,"position":"stackedBR"},\
-    {"element":"rightBox","visible":true,"position":"stackedBR"},\
-    {"element":"systemMenu","visible":true,"position":"stackedBR"},\
-    {"element":"desktopButton","visible":false,"position":"stackedBR"}\
-  ]\
-}
+gsettings set org.gnome.shell.extensions.dash-to-panel panel-element-positions '{"0":[{"element":"showAppsButton","visible":false,"position":"stackedTL"},{"element":"activitiesButton","visible":true,"position":"stackedTL"},{"element":"leftBox","visible":true,"position":"stackedTL"},{"element":"taskbar","visible":true,"position":"stackedTL"},{"element":"dateMenu","visible":true,"position":"centerMonitor"},{"element":"centerBox","visible":true,"position":"stackedBR"},{"element":"rightBox","visible":true,"position":"stackedBR"},{"element":"systemMenu","visible":true,"position":"stackedBR"},{"element":"desktopButton","visible":false,"position":"stackedBR"}],"1":[{"element":"showAppsButton","visible":false,"position":"stackedTL"},{"element":"activitiesButton","visible":true,"position":"stackedTL"},{"element":"leftBox","visible":true,"position":"stackedTL"},{"element":"taskbar","visible":true,"position":"stackedTL"},{"element":"dateMenu","visible":true,"position":"centerMonitor"},{"element":"centerBox","visible":true,"position":"stackedBR"},{"element":"rightBox","visible":true,"position":"stackedBR"},{"element":"systemMenu","visible":true,"position":"stackedBR"},{"element":"desktopButton","visible":false,"position":"stackedBR"}]}'
