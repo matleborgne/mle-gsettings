@@ -9,4 +9,4 @@ if [ $distro == "nixos" ] ; then
   sed -i "s/ /\n/g" .gschemas
 else
   ls -d /usr/share/glib-2.0/schemas/* > ./.gschemas
-elif
+fi
