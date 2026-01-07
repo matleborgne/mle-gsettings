@@ -8,7 +8,8 @@ if [ $distro == "nixos" ] ; then
   echo $(find -L "$HOME/.local/share/gnome-shell/" -type d -name "schemas") >> ./.gschemas
   sed -i "s/ /\n/g" .gschemas
 else
-  ls -d /usr/share/glib-2.0/schemas/* > ./.gschemas
+  #ls -d /usr/share/glib-2.0/schemas/* > ./.gschemas
+  echo "/usr/share/glib-2.0/schemas" > ./.gschemas
 
   # Cas du pop-shell compilé
   mv $HOME/.git/shell $HOME/.git/pop-shell
