@@ -10,4 +10,5 @@ if [ $distro == "nixos" ] ; then
 else
   ls -d /usr/share/glib-2.0/schemas/* > ./.gschemas
   echo $(find -L "$HOME/.git" -type d -name "schemas") >> ./.gschemas
+  sed -i "s/ /\n/g" .gschemas
 fi
