@@ -4,13 +4,12 @@
 export GSETTINGS_SCHEMA_DIR=$(grep -r dash-to-panel ./.gschemas | tail -n 1)
 
 # ~~~~~~~~~~ Dash to panel ~~~~~~~~~~
-gsettings set org.gnome.shell.extensions.dash-to-panel panel-size 40
 gsettings set org.gnome.shell.extensions.dash-to-panel dot-style-focused "DASHES"
 gsettings set org.gnome.shell.extensions.dash-to-panel dot-style-unfocused "DOTS"
 gsettings set org.gnome.shell.extensions.dash-to-panel dot-position "TOP"
 gsettings set org.gnome.shell.extensions.dash-to-panel focus-highlight-opacity 15
-gsettings set org.gnome.shell.extensions.dash-to-panel panel-sizes "{'0':40,'1':40}"
-gsettings set org.gnome.shell.extensions.dash-to-panel panel-positions "{'0':'TOP','1':'TOP'}"
+gsettings set org.gnome.shell.extensions.dash-to-panel panel-sizes '{"0":40,"1":40}'
+gsettings set org.gnome.shell.extensions.dash-to-panel panel-positions '{"0":"TOP","1":"TOP"}'
 gsettings set org.gnome.shell.extensions.dash-to-panel stockgs-keep-dash true
 gsettings set org.gnome.shell.extensions.dash-to-panel trans-panel-opacity 0.0
 gsettings set org.gnome.shell.extensions.dash-to-panel trans-use-custom-opacity true
