@@ -1,6 +1,6 @@
 #!/bin/bash
 
-distro = $(cat /etc/os-release | grep '^ID=' | awk -F '=' '{print $NF }')
+distro=$(cat /etc/os-release | grep '^ID=' | awk -F '=' '{print $NF }')
 
 if [ $distro == "nixos" ] ; then
   echo $(find -L "/run/current-system/sw/share/gsettings-schemas/" -type d -name "schemas") > ./.gschemas
